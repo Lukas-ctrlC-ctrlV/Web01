@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/****** resuable ******/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.heading-main h2::after {
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 2px solid orange;
+    margin: 10px auto;
+}
+
+/*********** Header **********/
+header {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("obrazky/hamburger.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 50;
+    border-bottom: 2px solid white;
+}
+
+#logo img {
+    width: 40px;
+    position: fixed;
+    top: 15px;
+    z-index: 100;
+}
+
+nav ul {
+    float: right;
+    margin-top: 20px;
+    margin-left: 28%;
+    z-index: 100;
+    position: fixed;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid orange;
+    transition: border-bottom 1s;
+}
+
+header h2 {
+    color: white;
+
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.btn-full:link, 
+.btn-full:visited {
+    background: rgb(204, 135, 7);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    transition: background 0.5s;
+    background: blue;
+    border: 1px solid blue;
+}
+
+.btn-empty:link,
+.btn-empty:visited{
+    margin-left: 10px;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    transition: background 0.5s;
+    background: blue;
+    border: 1px solid blue;
+}
+
+/************Mobile-nav**************/
+.mobile-nav-icon img {
+    height: 40px;
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+/************ Main ************/
+
+.pizza-example img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 7px 20px black;
+}
+
+/********** Our Pizza ***********/
+
+.pizza-info img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 7px 20px black;
+}
+
+.text-pizza {
+    margin-bottom: 15px;
+}
+
+.text-pizza div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+}
+
+.text-pizza p {
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+/******Reference*******/
+.reference {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("obrazky/hamburger.jpg");;
+    background-size: cover;
+    height: 50%;
+    background-attachment: fixed;
+}
+
+.reference h2 {
+    color: white;
+    padding-top: 40px;
+}
+
+.jedna-reference {
+    color: white;
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.photo-name p {
+    color: white;
+    padding: 40px;
+    margin-left: 70px;
+}
+
+.photo-name img {
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+/******Fotogalerie******/
+.photos ul li {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+    list-style-type: none;
+}
+
+.photos img:hover {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photos img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+
+/*****stop floating**********/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/******************************Kontaktni formular************************/
+
+.contact-form {
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: white;
+    color: orange;
+}
+
+/******************************Footer************************/
+
+.footer-page {
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer-social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer-social p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+.footer-social p a:link,
+.footer-social p a:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-social p a:hover,
+.footer-social p a:active {
+    border-bottom: 1px solid white;
+}
+
+/**********Nav-scroll**********/
+#a1-about-us {
+    position: relative;
+    height: 0;
+    top: -70px;
+}
+
+#a2-our-pizza {
+    position: relative;
+    height: 0;
+    top: -70px;
+}
+
+#a3-reference {
+    position: relative;
+    height: 0;
+    top: -69px;
+}
+
+#a4-photo-gallery {
+    position: relative;
+    height: 0;
+    top: -88px;
+}
+
+#a5-kontakt {
+    position: relative;
+    height: 0;
+    top: -70px;
+}

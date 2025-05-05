@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1200px){
+    /**********Reference**********/
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*********Photo-gallery********/
+    .col.span-1-of-3.jedna-reference {
+        width: 49%;
+        margin-left: 10px;
+    }
+
+    .jedna-reference:nth-child(3){
+        display: none;
+    }
+
+    .photo-segment .col {
+        margin-left: 0;
+    }
+
+    .photos ul li {
+        width: 100%;
+    }
+
+    /*************Our pizza*************/
+    .pizza-info .span-1-of-2 {
+        width: 96%;
+    }
+
+    .pizza-info img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text-pizza p {
+        margin-top: 0px;
+    }
+
+    /**********About us**********/
+    .pizza-example .span-1-of-2 {
+        width: 96%;
+    }
+
+    .pizza-example .col {
+        margin-left: 0px;
+    }
+
+    .pizza-example img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*****************Header***********/
+    .header-text {
+        width: 100%;
+        left: 0%;
+        transform: translate(0%,0%);
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*************Logo*************/
+    #logo img {
+        margin-left: 20px;
+    }
+
+    /***********Mobile************/
+    nav ul li {
+        display: block;
+    }
+
+    .mobile-nav-back {
+        height: 210px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 2px solid white;
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    nav ul {
+        display: none;
+        z-index: 200;
+    }
+}
